@@ -65,6 +65,8 @@ a.cc-btn{
     margin-top: 1em;
     font-size: 1.2em;
     clear: left;
+    border: 2px white solid;
+    padding: 1em;
 }
 
 .blurb {
@@ -93,4 +95,8 @@ a.cc-btn{
 .blurb-attribution:before {
     content: "- ";
 
+}
+
+#about p{
+	font-size: 1.5em;
 }

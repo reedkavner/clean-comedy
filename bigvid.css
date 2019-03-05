@@ -1,0 +1,132 @@
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    /*background-color: #91d8ce; */
+    background: #06beb6;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #06beb6, #48b1bf);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #06beb6, #48b1bf);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    font-size: 16px;
+}
+
+.hidden{
+  display: none;
+}
+
+#banner{
+  width: 100vw;
+  min-height: 4em;
+  background-color: black;
+  color: #06beb6;
+}
+
+header {
+  position: relative;
+  background-color: black;
+  width: 100vw;
+  height: 56vw;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cc-logo{
+    width: 60vw;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    clear: all;
+}
+
+#play{
+  border: 1px white solid;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 1em;
+  font-weight: 800;
+  margin-top: 2em;
+  cursor: pointer;
+}
+
+#play:hover{
+  background-color: white;
+  color: black;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.4;
+  z-index: 1;
+}
+
+.blurb {
+    background-image: url('img/open-quote.png');
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: 10%;
+    padding-top: 1.2em;
+    padding-left: 1.2em;
+}
+
+.blurb-text {
+    font-size: 3em;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.2em;
+}
+
+.blurb-attribution {
+    font-weight: 200;
+    font-size: 1.8em;
+    padding-right: 2em;
+    text-align: center;
+}
+
+.blurb-attribution:before {
+    content: "- ";
+
+}
+
+#about p{
+  font-size: 1.5em;
+}
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('img/bg-still.jpg') black no-repeat center center scroll;
+  }
+  header video {
+    display: none;
+  }
+}
+
