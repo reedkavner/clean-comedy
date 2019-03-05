@@ -1,0 +1,96 @@
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    /*background-color: #91d8ce; */
+    background: #06beb6;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #06beb6, #48b1bf);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #06beb6, #48b1bf);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    font-size: 16px;
+}
+
+#main {
+    margin-top: 3vw;
+}
+
+a.cc-btn{
+	color: black !important;
+	background: white;
+}
+
+.cc-logo {
+    display: block;
+    width: 60vw;
+    height: 12vw; /* this should always be 20% of the width property */
+    margin-left: auto;
+    margin-right: auto;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.section {
+    margin-top: 2em;
+}
+
+.hero {
+    margin-top: 4em;
+}
+
+.ctas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.pre-order {
+    text-align: center;
+    margin-bottom: 1em;
+    line-height: 1;
+}
+
+.pre-order-hed {
+    font-weight: 800;
+    font-size: 2em;
+    margin-bottom: .2em
+}
+
+.ctas img {
+    max-width: 100%;
+}
+
+.party-promo {
+    margin-top: 1em;
+    font-size: 1.2em;
+    clear: left;
+}
+
+.blurb {
+    background-image: url('img/open-quote.png');
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: 10%;
+    padding-top: 1.2em;
+    padding-left: 1.2em;
+}
+
+.blurb-text {
+    font-size: 3em;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.2em;
+}
+
+.blurb-attribution {
+    font-weight: 200;
+    font-size: 1.8em;
+    padding-right: 2em;
+    text-align: center;
+}
+
+.blurb-attribution:before {
+    content: "- ";
+
+}
