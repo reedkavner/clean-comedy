@@ -15,13 +15,6 @@ body {
   display: none;
 }
 
-#banner{
-  width: 100vw;
-  min-height: 4em;
-  background-color: black;
-  color: #06beb6;
-}
-
 header {
   position: relative;
   background-color: black;
@@ -87,6 +80,19 @@ header .overlay {
   background-color: black;
   opacity: 0.4;
   z-index: 1;
+}
+
+.pre-order{
+  margin-top: 3em;
+}
+
+.pre-order h2{
+font-weight: 800;
+}
+
+.badge img{
+  width: 100%;
+  max-width: 12em;
 }
 
 .blurb {
