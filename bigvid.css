@@ -127,6 +127,7 @@ font-weight: 800;
   font-size: 1.5em;
 }
 
+/*
 @media (pointer: coarse) and (hover: none) {
   header {
     background: url('img/bg-still.jpg') black no-repeat center center scroll;
@@ -135,4 +136,6 @@ font-weight: 800;
     display: none;
   }
 }
+*/
+
 
