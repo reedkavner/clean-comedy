@@ -33,13 +33,13 @@
                     <img class="cc-logo" src="img/zz-cc-logo-white.png">
                 </div>
                 <div class="col-12">
-                    <div id="play">
+                    <div id="play" data-video-id="26-nLZZGupU">
                         Watch the trailer
                     </div>
                 </div>
                 <div class="col-12 pre-order">
                     <h2>Pre-Order Today</h2>
-                    Available to stream and download everywhere <strong>4/4</strong>
+                    Available to stream and download everywhere&nbsp;<strong>4/4</strong>
                     <div class="row badges mt-2">
                         <div class="col-6 text-right badge">
                             <img src="img/itunes.png">
@@ -52,27 +52,59 @@
             </div>
         </div>
     </header>
-    <div class="hidden embed-responsive embed-responsive-16by9" id="yt-trailer">
-        <div id="player"></div>
-    </div>
-    <section class="my-5">
+    <div class="lightbox" style="display: none;">
         <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <aside class="blurb">
-                        <p class="blurb-text">It’s sharp, funny, observant, thoughtful and thought-provoking.</p>
-                        <p class="blurb-attribution">Bob Mondello, NPR</p>
-                    </aside>
+            <div class="row video-container">
+                <div class="col-12 col-md-11">
+                    <button type="button" class="close-lb" aria-label="Close">
+            <span aria-hidden="true">×</span>
+        </button>
+                    <div class="embed-responsive embed-responsive-16by9" id="yt-trailer">
+                        <div id="player"></div>
+                    </div>
                 </div>
             </div>
-                        <div class="row section" id="about">
-        <div class="col-12">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, neque ac lacinia euismod, ligula velit semper nisl, in volutpat eros mi eu eros.</p>
-            <p>Quisque egestas quis augue ut pellentesque. Donec aliquam lacinia fringilla. Integer molestie ultricies interdum. Fusce dapibus a enim in tincidunt. Donec interdum ullamcorper eleifend. Vivamus nec ipsum sed felis suscipit commodo. Donec eros lectus, faucibus ac urna quis, facilisis scelerisque purus. </p>
+        </div>
+    </div> <!-- lightbox -->
+    <div class="container">
+        <div class="row my-5">
+            <div class="col-12">
+                <aside class="blurb">
+                    <p class="blurb-text">It’s sharp, funny, observant, thoughtful and thought-provoking.</p>
+                    <p class="blurb-attribution">Bob Mondello, NPR</p>
+                </aside>
+            </div>
+        </div>
+        <div class="row my-5">
+            <div class="col-12" id="about">
+                <img id="album-cover" src="img/clean-comedy-cover.jpg">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque, neque ac lacinia euismod, ligula velit semper nisl, in volutpat eros mi eu eros.</p>
+                <p>Quisque egestas quis augue ut pellentesque. Donec aliquam lacinia fringilla. Integer molestie ultricies interdum. Fusce dapibus a enim in tincidunt. Donec interdum ullamcorper eleifend.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <aside class="blurb blurb-small">
+                    <p class="blurb-text">It’s sharp, funny, observant, thoughtful and thought-provoking.</p>
+                    <p class="blurb-attribution">Bob Mondello, NPR</p>
+                </aside>
+            </div>
+
+            <div class="col">
+                <aside class="blurb blurb-small">
+                    <p class="blurb-text">It’s sharp, funny, observant, thoughtful and thought-provoking.</p>
+                    <p class="blurb-attribution">Bob Mondello, NPR</p>
+                </aside>
+            </div>
+
+            <div class="col">
+                <aside class="blurb blurb-small">
+                    <p class="blurb-text">It’s sharp, funny, observant, thoughtful and thought-provoking.</p>
+                    <p class="blurb-attribution">Bob Mondello, NPR</p>
+                </aside>
+            </div>
         </div>
     </div>
-        </div>
-    </section>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
