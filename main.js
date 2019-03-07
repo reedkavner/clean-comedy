@@ -12,7 +12,7 @@
             height: '390',
             width: '640',
             videoId: '26-nLZZGupU',
-            playerVars: { 'rel': 0, 'modestbranding': 1},
+            playerVars: { 'rel': 0, 'modestbranding': 1 },
             events: { 'onStateChange': onPlayerStateChange }
         });
     }
@@ -39,3 +39,8 @@
             $('.lightbox').hide();
         }
     }
+
+    var quack = document.getElementById("quack");
+    $(".footer-duck").click(function() {
+        quack.play();
+    })

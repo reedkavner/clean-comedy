@@ -1,3 +1,8 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body {
     font-family: 'Nunito Sans', sans-serif;
     /*background-color: #91d8ce; */
@@ -9,86 +14,127 @@ body {
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: white;
     font-size: 16px;
+    text-rendering: optimizeLegibility;
+    margin-bottom: 6em /* for sticky footer */
 }
 
-#main {
-    margin-top: 3vw;
+.hidden {
+    display: none;
 }
 
-a.cc-btn{
-	color: black !important;
-	background: white;
+a{
+  color: white;
 }
 
-.cc-logo {
-    display: block;
-    width: 60vw;
-    height: 12vw; /* this should always be 20% of the width property */
-    margin-left: auto;
-    margin-right: auto;
-    background-size: 100%;
-    background-repeat: no-repeat;
+a:hover{
+  text-decoration: underline;
 }
 
-.section {
-    margin-top: 2em;
+a:hover, a:active, a:visited{
+  color: white;
 }
 
-.hero {
-    margin-top: 4em;
+header {
+    position: relative;
+    background-color: black;
+    width: 100vw;
+    height: 90vh;
+    min-height: 40vw;
+    overflow: hidden;
+    background-image: url('img/bg-still.jpg')
 }
 
-.ctas {
+header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto; 
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+    position: relative;
+    z-index: 2;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 2em 2em;
+}
+
+.cc-logo {
+    width: 80vw;
+    max-width: 750px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+#play {
+    border: 1px white solid;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 1em;
+    font-weight: 800;
+    margin-top: 2em;
+    cursor: pointer;
+}
+
+#play:hover {
+    background-color: white;
+    color: black;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.4;
+    z-index: 1;
 }
 
 .pre-order {
-    text-align: center;
-    margin-bottom: 1em;
-    line-height: 1;
+    margin-top: 2em;
 }
 
-.pre-order-hed {
+.pre-order h2 {
     font-weight: 800;
-    font-size: 2em;
-    margin-bottom: .2em
 }
 
-.ctas img {
-    max-width: 100%;
-}
-
-.party-promo {
-    margin-top: 1em;
-    font-size: 1.2em;
-    clear: left;
-    border: 2px white solid;
-    padding: 1em;
+.badge img {
+    width: 100%;
+    max-width: 15em;
 }
 
 .blurb {
     background-image: url('img/open-quote.png');
     background-position: top left;
     background-repeat: no-repeat;
-    background-size: 10%;
-    padding-top: 1.2em;
-    padding-left: 1.2em;
+    background-size: 1.4em;
+    font-size: 3em;
+    padding-top: .5em;
 }
 
 .blurb-text {
-    font-size: 3em;
     font-weight: 900;
     font-style: italic;
-    line-height: 1.2em;
+    line-height: 1.2;
+    text-indent: .4em;
 }
 
 .blurb-attribution {
     font-weight: 200;
-    font-size: 1.8em;
-    padding-right: 2em;
+    font-size: .6em;
     text-align: center;
 }
 
@@ -97,6 +143,127 @@ a.cc-btn{
 
 }
 
-#about p{
-	font-size: 1.5em;
+.blurb-small{
+  font-size: 2em;
+}
+
+#about p {
+    font-size: 1.5em;
+}
+
+#album-cover{
+  float: left;
+  max-width: 200px;
+  margin-right: 1em;
+  border: 2px white solid;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 4em;
+  background-color: white;
+}
+
+.footer-links{
+  display: flex;
+  align-items: center;
+  color: #06beb6;
+}
+
+.footer-links a, a:hover, a:active, a:visited{
+  color: #06beb6;
+}
+
+.info-links a{
+  margin-right: 1em;
+  font-weight: bold;
+}
+
+.social-links a{
+  margin-left: 1em;
+  font-size: 1.3em;
+}
+
+.footer-duck{
+  height: 2em;
+}
+
+.lightbox {
+    background-color: rgba(0,0,0,.4);
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+
+}
+
+
+.close-lb {
+    float: right;
+    font-size: 2.5em;
+    color: white;
+    background: none;
+    border: none;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    z-index: 1;
+}
+
+
+
+@media only screen and (max-device-width : 768px){
+
+  body{
+    margin-bottom: 10em /* for sticky footer */
+  }
+  
+  header{
+    height: auto;
+    min-height: auto;
+  }
+
+  header .container{
+    padding: 2em 1em;
+  }
+
+  .cc-logo{
+    width: 90vw;
+  }
+
+  .blurb{
+    font-size: 2em;
+  }
+
+  .blurb-small .blurb-text{
+    margin-bottom: 0;
+  }
+
+  #album-cover{
+    max-width: 100%;
+    margin-bottom: 1.5em;
+
+  }
+
+  .footer{
+    height: 8.5em;
+    padding: 1em 0;
+  }
+
+  .footer-links a{
+    margin: .2em;
+  }
+
 }
