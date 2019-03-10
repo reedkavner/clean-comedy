@@ -1,11 +1,10 @@
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
     font-family: 'Nunito Sans', sans-serif;
-    /*background-color: #91d8ce; */
     background: #06beb6;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #06beb6, #48b1bf);
@@ -15,23 +14,24 @@ body {
     color: white;
     font-size: 16px;
     text-rendering: optimizeLegibility;
-    margin-bottom: 6em /* for sticky footer */
 }
 
 .hidden {
     display: none;
 }
 
-a{
-  color: white;
+a {
+    color: white;
 }
 
-a:hover{
-  text-decoration: underline;
+a:hover {
+    text-decoration: underline;
 }
 
-a:hover, a:active, a:visited{
-  color: white;
+a:hover,
+a:active,
+a:visited {
+    color: white;
 }
 
 header {
@@ -41,16 +41,16 @@ header {
     height: 90vh;
     min-height: 40vw;
     overflow: hidden;
-    background-image: url('img/bg-still.jpg')
+    background-image: url('/img/bg-still.jpg')
 }
 
 header video {
     position: absolute;
     top: 50%;
     left: 50%;
-    min-width: 100%; 
+    min-width: 100%;
     min-height: 100%;
-    width: auto; 
+    width: auto;
     height: auto;
     z-index: 0;
     -ms-transform: translateX(-50%) translateY(-50%);
@@ -99,7 +99,7 @@ header .overlay {
     height: 100%;
     width: 100%;
     background-color: black;
-    opacity: 0.4;
+    opacity: 0.3;
     z-index: 1;
 }
 
@@ -117,7 +117,7 @@ header .overlay {
 }
 
 .blurb {
-    background-image: url('img/open-quote.png');
+    background-image: url('/img/open-quote.png');
     background-position: top left;
     background-repeat: no-repeat;
     background-size: 1.4em;
@@ -143,56 +143,80 @@ header .overlay {
 
 }
 
-.blurb-small{
-  font-size: 2em;
+.blurb-small {
+    font-size: 2em;
 }
 
 #about p {
     font-size: 1.5em;
 }
 
-#album-cover{
-  float: left;
-  max-width: 200px;
-  margin-right: 1em;
-  border: 2px white solid;
+#album-cover {
+    float: left;
+    max-width: 200px;
+    margin-right: 1em;
+    border: 2px white solid;
 }
 
 .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 4em;
-  background-color: white;
+    width: 100%;
+    background-color: white;
+    padding: .7em 0;
 }
 
-.footer-links{
-  display: flex;
-  align-items: center;
-  color: #06beb6;
+.footer-links {
+    display: flex;
+    align-items: center;
+    color: #06beb6;
+    margin-bottom: .5em;
 }
 
-.footer-links a, a:hover, a:active, a:visited{
-  color: #06beb6;
+.footer-links a,
+a:hover,
+a:active,
+a:visited {
+    color: #06beb6;
 }
 
-.info-links a{
-  margin-right: 1em;
-  font-weight: bold;
+.info-links a {
+    margin-right: 1em;
+    font-weight: bold;
 }
 
-.social-links a{
-  margin-left: 1em;
-  font-size: 1.3em;
+.social-links a {
+    margin-left: 1em;
+    font-size: 1.3em;
 }
 
-.footer-duck{
-  height: 2em;
+.footer-duck {
+    height: 2em;
+}
+
+.credits {
+    color: #667a79;
+    font-size: .7em;
+}
+
+.credits a {
+    color: #667a79;
+    text-decoration: underline;
+}
+
+.credits div{
+  display: inline;
+}
+
+.copyright{
+  margin-right: .4em;
+}
+
+.copyright:after{
+  content: "·";
+  margin-left: .4em;
 }
 
 .lightbox {
-    background-color: rgba(0,0,0,.4);
+    background-color: rgba(0, 0, 0, .4);
     position: fixed;
     height: 100vh;
     width: 100vw;
@@ -224,46 +248,48 @@ header .overlay {
 
 
 
-@media only screen and (max-device-width : 768px){
+@media only screen and (max-device-width : 768px) {
 
-  body{
-    margin-bottom: 10em /* for sticky footer */
-  }
-  
-  header{
-    height: auto;
-    min-height: auto;
-  }
+    header {
+        height: auto;
+        min-height: auto;
+    }
 
-  header .container{
-    padding: 2em 1em;
-  }
+    header .container {
+        padding: 2em 1em;
+    }
 
-  .cc-logo{
-    width: 90vw;
-  }
+    .cc-logo {
+        width: 90vw;
+    }
 
-  .blurb{
-    font-size: 2em;
-  }
+    .blurb {
+        font-size: 2em;
+    }
 
-  .blurb-small .blurb-text{
-    margin-bottom: 0;
-  }
+    .blurb-small .blurb-text {
+        margin-bottom: 0;
+    }
 
-  #album-cover{
-    max-width: 100%;
-    margin-bottom: 1.5em;
+    #album-cover {
+        max-width: 100%;
+        margin-bottom: 1.5em;
+    }
 
-  }
+    .footer {
+        padding: 1em 0;
+    }
 
-  .footer{
-    height: 8.5em;
-    padding: 1em 0;
-  }
+    .footer-links a {
+        margin: 0 .5em;
+    }
 
-  .footer-links a{
-    margin: .2em;
-  }
+    .social-links{
+
+    }
+
+    .credits{
+        margin-top: .5em;
+    }
 
 }
