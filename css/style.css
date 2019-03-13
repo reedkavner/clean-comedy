@@ -69,7 +69,7 @@ header .container {
     padding: 2em 2em;
 }
 
-.cc-logo {
+img.cc-logo {
     width: 80vw;
     max-width: 750px;
     margin-right: auto;
@@ -126,7 +126,7 @@ header .overlay {
 }
 
 .blurb-text {
-    font-weight: 900;
+    font-weight: 800;
     font-style: italic;
     line-height: 1.2;
     text-indent: .4em;
@@ -145,11 +145,20 @@ header .overlay {
 
 .blurb-small {
     font-size: 2em;
+    margin-top: .5em;
 }
 
-.blurb-small .blurb-attribution{
+.blurb-small .blurb-attribution {
     display: block;
     text-align: left;
+}
+
+.zach-hello p {
+    font-size: 2.5em;
+    font-weight: 800;
+    margin-bottom: .5em;
+    line-height: 1.2;
+
 }
 
 #about p {
@@ -166,15 +175,21 @@ header .overlay {
     margin-top: .5em;
 }
 
-.bottom-cta{
+.bottom-cta {
     border: 2px solid #fcd90a;
-    padding: 1em 0em;
+    padding: .5em 0em;
     background-color: rgba(256, 256, 256, .1);
 }
 
-.bottom-cta h2{
+.bottom-cta h2 {
     margin: 0;
     font-weight: 800;
+}
+
+.ack {
+    font-size: 1.5em;
+    margin-bottom: .5em;
+    font-weight: 200;
 }
 
 
@@ -222,17 +237,17 @@ a:visited {
     text-decoration: underline;
 }
 
-.credits div{
-  display: inline;
+.credits div {
+    display: inline;
 }
 
-.copyright{
-  margin-right: .4em;
+.copyright {
+    margin-right: .4em;
 }
 
-.copyright:after{
-  content: "·";
-  margin-left: .4em;
+.copyright:after {
+    content: "·";
+    margin-left: .4em;
 }
 
 .lightbox {
@@ -288,19 +303,25 @@ a:visited {
         font-size: 2em;
     }
 
-    .blurb-small{
+    .zach-hello p{
+        font-size: 1.5em;
+    }
+
+    .blurb-small {
         background-position: .2em 0;
         padding-right: .2em;
 
     }
 
     .blurb-small .blurb-text {
-        margin-bottom: 0;
+        margin-bottom: .2em;
+        font-size: 1.5em;
     }
 
     #album-cover {
         max-width: 100%;
         margin-bottom: 1.5em;
+        margin-top: 1em;
     }
 
     .footer {
@@ -311,11 +332,9 @@ a:visited {
         margin: 0 .5em;
     }
 
-    .social-links{
+    .social-links {}
 
-    }
-
-    .credits{
+    .credits {
         margin-top: .5em;
     }
 
