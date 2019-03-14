@@ -28,6 +28,7 @@ $('#play').click(function() {
 $(document).click(function(event) {
     if (!$(event.target).closest(".embed-responsive, #play").length) {
         player.stopVideo();
+        $('body').removeClass('overflow-hidden');
         $('.lightbox').hide();
     }
 });

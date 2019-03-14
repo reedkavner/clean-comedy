@@ -1,5 +1,192 @@
-<html>
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136080813-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-136080813-1');
+    </script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,200i,400,400i,800,800i" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Favicon Trash-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="manifest" href="/icons/site.webmanifest">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#91d8ce">
+    <meta name="theme-color" content="#91d8ce">
+    <title>Clean Comedy - The debut album from Zach Zimmerman</title>
+    <meta name="description" content="Zach's evangelical mom wants him to focus on clean comedy. But there is no God and he likes to fuck. Pre-order 'Clean Comedy' now. Avaible everywhere April 4.">
+    <!-- FB OG garbage -->
+    <meta property="og:title" content="Clean Comedy - The debut album from Zach Zimmerman">
+    <meta property="og:description" content="Zach's evangelical mom wants him to focus on clean comedy. But there is no God and he likes to fuck. Pre-order 'Clean Comedy' now. Avaible everywhere April 4.">
+    <meta property="og:url" content="https://zach-zimmerman.com">
+    <meta property="og:image" content="https://zach-zimmerman.com/img/social.jpg">
+    <!-- twitter garbage -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@zzdoublezz" />
+    <meta name="twitter:creator" content="@zzdoublezz" />
+    <meta property="og:url" content="https://zach-zimmerman.com" />
+    <meta property="og:title" content="Clean Comedy - The debut album from Zach Zimmerman" />
+    <meta property="og:description" content="Zach's evangelical mom wants him to focus on clean comedy. But there is no God and he likes to fuck. Pre-order 'Clean Comedy' now. Avaible everywhere April 4." />
+    <meta property="og:image" content="https://zach-zimmerman.com/img/social.jpg" />
+</head>
+
 <body>
-Nothing here yet. Go to the secret test page plz and thx.
+    <header id="hero">
+        <div class="overlay"></div>
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="/vid/bg.mp4" type="video/mp4">
+        </video>
+        <div class="container h-100">
+            <div class="row">
+                <div class="col-12">
+                    <img class="cc-logo" src="/img/zz-cc-logo-white-debut-timeout.png" alt="Clean Comedy: The Debut Album from Zach Zimmerman">
+                </div>
+                <div class="col-12">
+                    <div id="play" class="ga-track" data-ga-label="Watch Trailer" data-video-id="26-nLZZGupU">
+                        Watch the trailer
+                    </div>
+                </div>
+                <div class="col-12 top-cta">
+                    <h2>Pre-Order Now</h2>
+                    <div class="row badges mt-2 mb-1">
+                        <div class="col-6 text-right badge">
+                            <a class="ga-track" data-ga-label="Listen iTunes" href="http://itunes.apple.com/album/id1454736173?ls=1&app=itunes">
+                                <img src="/img/itunes.png" alt="Download on iTunes">
+                            </a>
+                        </div>
+                        <div class="col-6 text-left badge">
+                            <a href="https://play.google.com/store/music/album/Zach_Zimmerman_Clean_Comedy?id=Bfdrtqba2vui66vsc5gzbfns6xu&hl=en" class="ga-track" data-ga-label="Listen Google Play">
+                                <img src="/img/google-play.png" alt="Download on Google Play">
+                            </a>
+                        </div>
+                    </div>
+                    Available to stream and download everywhere&nbsp;<strong>4/4</strong>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="lightbox" style="display: none;">
+        <div class="container">
+            <div class="row video-container">
+                <div class="col-12 col-md-10">
+                    <button type="button" class="close-lb" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                    <div class="embed-responsive embed-responsive-16by9" id="yt-trailer">
+                        <div id="player"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- lightbox -->
+    <div class="container">
+        <div class="row mt-3 mt-md-5">
+            <div class="col-12 zach-hello">
+                <h2>Hi, I’m Zach and I’d like you to pre-order my album.</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12" id="about">
+                <img id="album-cover" src="/img/clean-comedy-cover.jpg">
+                <p>"Clean Comedy" is baby’s first album. It is also my last if I die in the next year. It covers a lot – my evangelical family, being gay and flirty, and more.</p>
+                <p>If you pre-order it, I’ll send you nudes. JK. JK? It's being independently released (brave? dumb?), so pre-orders are very helpful. It’s also pretty goddamn funny. But don’t take my word for it!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 blurb">
+                <i class="fas fa-quote-left"></i>
+                <p class="blurb-text">Hilarious!</p>
+                <p class="blurb-attribution">Louis Faranda, Caroline’s on Broadway</p>
+            </div>
+            <div class="col-12 blurb">
+                <i class="fas fa-quote-left"></i>
+                <p class="blurb-text">Sharp, funny, observant, thoughtful, and thought-provoking.</p>
+                <p class="blurb-attribution">Bob Mondello, NPR</p>
+            </div>
+
+            <div class="col-12 blurb">
+                <i class="fas fa-quote-left"></i>
+                <p class="blurb-text">Zach is effortlessly funny. I've only said this about Robyn and Zach Zimmerman: I wish the album were longer.</p>
+                <p class="blurb-attribution">Jo Firestone, Comedian and <em>SNL</em> writer</p>
+            </div>
+            <div class="col-12 blurb">
+                <i class="fas fa-quote-left"></i>
+                <p class="blurb-text">I love Zach Zimmerman. He's a comic that reminds me of the ones I loved growing up. A clear perspective, surprising takes, and great energy. He's also cute, which you can't hear on an album. That's a shame.</p>
+                <p class="blurb-attribution">Matt Rogers, <em>Las Culturistas</em></p>
+            </div>
+            <div class="col-12 blurb">
+                <i class="fas fa-quote-left"></i>
+                <p class="blurb-text">So glad you had a fun experience with our product!</p>
+                <p class="blurb-attribution">Marketing team, Clone-a-Willy: The in-home penis casting kit</p>
+            </div>
+        </div>
+        <div class="row my-3 my-md-5 mx-1 mx-md-0 bottom-cta">
+            <div class="col-12 col-md-6 d-flex align-items-center justify-content-center justify-content-md-start">
+                <div class="d-block text-center text-md-left">
+                    <div class="ack">
+                    Click these buttons, ya’ll!
+                    </div>
+                    <h2>Pre-Order Now</h2>
+                    Available everywhere <strong>4/4</strong>
+                </div>
+            </div>
+            <div class="badges col-12 col-md-6 d-flex align-items-center justify-content-center justify-content-md-end mt-3 mt-md-0">
+                <div class="badge">
+                    <a href="http://itunes.apple.com/album/id1454736173?ls=1&app=itunes" class="ga-track" data-ga-label="Listen iTunes">
+                        <img src="/img/itunes.png" alt="Download on iTunes">
+                    </a>
+                </div>
+                <div class="badge">
+                    <a href="https://play.google.com/store/music/album/Zach_Zimmerman_Clean_Comedy?id=Bfdrtqba2vui66vsc5gzbfns6xu&hl=en" class="ga-track" data-ga-label="Listen Google Play">
+                        <img src="/img/google-play.png" alt="Download on Google Play">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div> <!-- container -->
+    <footer class="footer">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-12 col-md-5 footer-links info-links justify-content-center justify-content-md-start order-1 order-md-1">
+                    <a href="http://zachzimmermanactor.weebly.com/">Bio</a>
+                    <a href="http://zachzimmermanactor.weebly.com/live-shows.html">Live Shows</a>
+                </div>
+                <div class="col-12 col-md-2 h-100 footer-links social-links justify-content-center order-3 order-md-2">
+                    <img src="/img/duck-192.png" class="footer-duck ga-track" data-ga-label="Quack">
+                </div>
+                <div class="col-12 col-md-5 h-100 footer-links social-links justify-content-center justify-content-md-end order-2 order-md-3">
+                    <a href="https://twitter.com/zzdoublezz/"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/zzdoublezz/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://medium.com/@zzdoublezz"><i class="fab fa-medium"></i></a>
+                    <a href="mailto:ztzimmerman@gmail.com"><i class="far fa-envelope"></i></a>
+                </div>
+                <div class="d-flex col-12 order-12 credits justify-content-center justify-content-md-start">
+                    <div class="copyright">&copy; 2019 Zach Zimmerman</div>
+                    <div class="rik">Site by <a href="https://reed.me">Reed Kavner</a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <audio id="quack" src="/vid/quack.mp3" style="display: none;"></audio>
+    <script src="/js/main.js"></script>
 </body>
+
 </html>
