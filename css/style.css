@@ -128,24 +128,25 @@ header .overlay {
 }
 
 
-.zach-hello h2{
-    margin-bottom: .2em;
+.zach-hello h2 {
+    margin-bottom: .4em;
     line-height: 1.2;
     font-weight: 800;
 }
 
-#about p {
+#about  {
     font-size: 1.5em;
     font-weight: 200;
+    margin-bottom: 1em;
 }
 
 
 #album-cover {
     float: left;
-    max-width: 220px;
+    width: 40%;
+    max-width: 250px;
     margin-right: 1em;
     border: 2px white solid;
-    margin-top: .5em;
 }
 
 .blurb {
@@ -302,18 +303,31 @@ a:visited {
     header {
         height: auto;
         min-height: auto;
+        background-size: cover;
+        background-position: center;
+
     }
+
 
     header .container {
         padding: 1.5em 1em;
+    }
+
+    #bg-vid {
+        display: none !important;
+
     }
 
     .cc-logo {
         width: 90vw;
     }
 
-    .zach-hello{
+    .zach-hello {
         margin-top: .5em;
+    }
+
+    #about{
+        margin-bottom: 0;
     }
 
     .blurb .fa-quote-left {
@@ -327,9 +341,9 @@ a:visited {
     }
 
     #album-cover {
-        max-width: 100%;
-        margin-bottom: 1.5em;
-        margin-top: 1em;
+        width: 100%;
+        max-width: none;
+        margin-bottom: 1em;
     }
 
     .ack {
