@@ -43,6 +43,15 @@ function onPlayerStateChange(event) {
 
 $(document).ready(function() {
 
+    var playPromise = $('#bg-vid').get(0).play();
+    // In browsers that don’t yet support this functionality,
+    // playPromise won’t be defined.
+    if (playPromise !== undefined) {
+        playPromise.then(function() {
+            $('#bg-vid').show();
+        });
+    }
+
     $('.ga-track').mousedown(function(event) {
         var target = $(event.currentTarget);
         var label = target.data('ga-label');
