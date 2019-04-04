@@ -42,10 +42,19 @@ a:visited {
 header {
     position: relative;
     width: 100vw;
-    height: 90vh;
+    height: 98vh;
     min-height: 45vw;
     overflow: hidden;
-    background-image: url('/img/bg-still.jpg');
+    background-image: url('/img/bg-still-2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+
+}
+
+header.loading{
+    background: none;
 }
 
 header video {
@@ -81,21 +90,6 @@ img.cc-logo {
     display: block;
 }
 
-#play {
-    border: 1px white solid;
-    text-transform: uppercase;
-    display: inline-block;
-    padding: 1em;
-    font-weight: 800;
-    margin-top: 2em;
-    cursor: pointer;
-    transition: all 100ms ease-out;
-}
-
-#play:hover {
-    background-color: white;
-    color: black;
-}
 
 header .overlay {
     position: absolute;
@@ -109,24 +103,78 @@ header .overlay {
 }
 
 .top-cta {
-    margin-top: 2em;
+    margin-top: 3em;
 }
 
 .top-cta h2 {
     font-weight: 800;
 }
 
-.badge img {
-    width: 100%;
-    max-width: 15em;
-    transition: filter 100ms ease-out;
+.listen-buttons {
+    justify-content: center;
 }
 
-.badge img:hover {
-    -webkit-filter: drop-shadow(0px 0px 1px white);
-    filter: drop-shadow(0px 0px 1px white);
+.listen-buttons a {
+    color: white !important;
+    font-size: 1em;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 3em;
+    width: 9em;
+    border: 1px white solid;
+    line-height: 3em;
+    margin-right: 1em;
+    transition: all 100ms ease-out;
+    margin-bottom: .5em;
 }
 
+.listen-buttons a:hover {
+    background-color: white;
+    color: black !important;
+}
+
+.listen-buttons a:hover .fa-itunes {
+    color: #cb57d2 !important;
+}
+
+.listen-buttons a:hover .fa-google-play {
+    color: #ff5722 !important;
+}
+
+.listen-buttons a:hover .fa-spotify {
+    color: #1DB954 !important;
+}
+
+.listen-buttons .fab {
+    margin-right: .3em;
+    font-size: 1.5em;
+}
+
+.listen-buttons a:last-child {
+    margin-right: 0;
+}
+
+.listen-buttons span {
+    font-weight: 700;
+}
+
+.or-stream {
+    max-width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.or-stream a {
+    color: white !important;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.or-stream a:hover{
+    text-decoration: underline;
+}
 
 .zach-hello h2 {
     margin-bottom: .4em;
@@ -134,7 +182,7 @@ header .overlay {
     font-weight: 800;
 }
 
-#about  {
+#about {
     font-size: 1.5em;
     font-weight: 200;
     margin-bottom: 1em;
@@ -166,6 +214,7 @@ header .overlay {
     font-size: .8em;
     position: absolute;
     margin-top: -.4em;
+    margin-left: -.6em;
 }
 
 .blurb-text {
@@ -190,19 +239,17 @@ header .overlay {
 }
 
 .bottom-cta {
-    border: 2px solid #fcd90a;
-    padding: .5em 0em;
-    background-color: rgba(256, 256, 256, .1);
+    text-align: center;
+    margin: 4em 0;
+    align-items: baseline;
+    justify-content: center;
 }
 
 .bottom-cta h2 {
     margin: 0;
     font-weight: 800;
-}
-
-.ack {
-    font-size: 1.5em;
-    font-weight: 200;
+    display: inline-block;
+    margin-right: 2em;
 }
 
 
@@ -263,54 +310,19 @@ a:visited {
     margin-left: .4em;
 }
 
-.lightbox {
-    background-color: rgba(0, 0, 0, .4);
-    position: fixed;
-    height: 100vh;
-    width: 100vw;
-    z-index: 9999;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    overflow: scroll;
-
-}
-
-
-.close-lb {
-    float: right;
-    font-size: 2.5em;
-    color: white;
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-
-.video-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 100vh;
-    z-index: 1;
-}
-
-
 
 @media only screen and (max-device-width : 768px) {
 
     header {
         height: auto;
-        min-height: auto;
-        background-size: cover;
-        background-position: center;
-
+        min-height: 90vh;
+        background-image: url('/img/bg-still-2-vert.jpg');
     }
 
 
     header .container {
         padding: 1.5em 1em;
+        height: 100%;
     }
 
     #bg-vid {
@@ -319,14 +331,21 @@ a:visited {
     }
 
     .cc-logo {
-        width: 90vw;
+        width: 90vw !important;
+    }
+
+    .listen-buttons a {
+        width: 100%;
+        max-width: 20em;
+        margin-right: 0;
+        margin-bottom: 1em;
     }
 
     .zach-hello {
         margin-top: .5em;
     }
 
-    #about{
+    #about {
         margin-bottom: 0;
     }
 
@@ -346,9 +365,17 @@ a:visited {
         margin-bottom: 1em;
     }
 
-    .ack {
-        margin-bottom: .8em;
+    .bottom-cta {
+        margin: 2em 0;
     }
+
+    .bottom-cta h2 {
+        margin-right: 0;
+    }
+
+.listen-buttons a:hover .fa-itunes{
+    color: #cb57d2 !important;
+}
 
     .footer {
         padding: 1em 0;
