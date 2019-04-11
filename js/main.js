@@ -23,6 +23,13 @@ $(document).ready(function() {
         console.log('GA Click Event: ' + label);
     })
 
+    // remove hash from URL after click
+    $('#about-btn').click(function(e){
+        setTimeout(function(){
+            history.pushState("", document.title, window.location.pathname + window.location.search);
+        }, 1)
+    })
+
     var quack = document.getElementById("quack");
     $(".footer-duck").click(function() {
         quack.play();
