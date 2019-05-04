@@ -45,7 +45,7 @@ header {
     position: relative;
     width: 100vw;
     height: 95vh;
-    min-height: 45vw;
+    min-height: 50vw;
     overflow: hidden;
     background-image: url('/img/bg-still-2.jpg');
     background-size: cover;
@@ -158,11 +158,13 @@ header .overlay {
     margin-right: 1em;
     transition: all 100ms ease-out;
     margin-bottom: .5em;
+    cursor: pointer;
 }
 
 .listen-buttons a:hover {
     background-color: white;
     color: black !important;
+    cursor: pointer;
 }
 
 .listen-buttons a:hover .fa-itunes {
@@ -210,8 +212,22 @@ header .overlay {
     text-decoration: underline;
 }
 
-.about-links {
+.award-badges{
     margin-top: 2em;
+}
+
+.award-badges img{
+    width: 48%;
+    max-width: 180px;
+}
+
+.award-badges img:first-child{
+    margin-right: 1em;
+}
+
+
+.about-links {
+    margin-top: 1em;
 }
 
 .about-links a {
@@ -226,7 +242,6 @@ header .overlay {
 .about-links i {
     margin-left: .2em;
 }
-
 
 
 .zach-hello h2 {
@@ -245,10 +260,9 @@ header .overlay {
 
 #album-cover {
     float: left;
-    width: 40%;
     max-width: 250px;
-    margin-right: 1em;
     border: 2px white solid;
+    margin-right: 1em;
 }
 
 .blurb {
@@ -400,6 +414,10 @@ a:visited {
         max-width: 20em;
         margin-right: 0;
         margin-bottom: 1em;
+    }
+
+    .award-badges img:first-child{
+        margin-right: 1%;
     }
 
     .zach-hello {
