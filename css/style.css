@@ -45,7 +45,7 @@ header {
     position: relative;
     width: 100vw;
     height: 95vh;
-    min-height: 50vw;
+    min-height: 51vw;
     overflow: hidden;
     background-image: url('/img/bg-still-2.jpg');
     background-size: cover;
@@ -85,6 +85,7 @@ header .container {
 }
 
 .zz-promo {
+    display: none;
     width: 100%;
     font-size: 1.2em;
     position: relative;
